@@ -1,0 +1,30 @@
+{
+  "name": "serve-image",
+  "version": "0.0.0",
+  "description": "Express.js middleware to serve images in the dimension needed.",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "keywords": [
+    "dynamic",
+    "resize",
+    "image",
+    "middleware",
+    "express"
+  ],
+  "author": "Willi Eßer <willi.esser@troublete.com>",
+  "license": "GPL-2.0",
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "express": "^4.16.1",
+    "image-size": "^0.6.1",
+    "supertest": "^3.0.0",
+    "xo": "^0.18.2"
+  },
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.2",
+    "mime-types": "^2.1.17",
+    "path-exists": "^3.0.0"
+  }
+}
