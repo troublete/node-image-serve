@@ -2,4 +2,3 @@ node_modules
 test/*
 !test/test.js
 !test/test.png
-package-lock.json
