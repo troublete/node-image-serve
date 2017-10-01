@@ -11,7 +11,9 @@
     "resize",
     "image",
     "middleware",
-    "express"
+    "express",
+    "expressjs",
+    "ffmpeg"
   ],
   "author": "Willi Eßer <willi.esser@troublete.com>",
   "license": "GPL-2.0",
