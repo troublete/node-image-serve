@@ -2,6 +2,8 @@
 
 > Express.js middleware to serve images in the dimension needed. 🖼
 
+[![Build Status](https://travis-ci.org/troublete/image-serve.svg?branch=master)](https://travis-ci.org/troublete/image-serve)
+
 ## Prerequisites
 
 * `ffmpeg` needs to be installed on the host system.
