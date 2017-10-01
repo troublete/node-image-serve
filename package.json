@@ -13,7 +13,8 @@
     "middleware",
     "express",
     "expressjs",
-    "ffmpeg"
+    "ffmpeg",
+    "express-middleware"
   ],
   "author": "Willi Eßer <willi.esser@troublete.com>",
   "license": "GPL-2.0",
