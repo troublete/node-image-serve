@@ -1,6 +1,6 @@
 # serve-image
 
-> Express.js middleware to serve images in the dimension needed.
+> Express.js middleware to serve images in the dimension needed. 🖼
 
 ## Prerequisites
 
@@ -43,11 +43,11 @@ Middleware to request images in different sizes from a source directory. Accepts
 
 All options are optional.
 
-### `src` (**string**) –– *Default*: `process.cwd()`
+### `src` (**string**) –– *Default:* `process.cwd()`
 
 The source directory to be used to search for the given image.
 
-### `onError(error)` –– *Default:*: `console.error`
+### `onError(error)` –– *Default:* `console.error`
 
 Optional error callback used by `fluent-ffmpeg`.
 
