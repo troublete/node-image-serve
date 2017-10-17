@@ -2,8 +2,7 @@ os: osx
 language: node_js
 before_install:
   - brew update
-  - brew upgrade
-  - brew install ffmpeg
+  - brew install ruby ffmpeg
 node_js:
   - "node"
   - "lts/*"
