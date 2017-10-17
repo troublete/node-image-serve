@@ -1,6 +1,8 @@
 os: osx
 language: node_js
 before_install:
+  - brew update
+  - brew upgrade
   - brew install ffmpeg
 node_js:
   - "node"
