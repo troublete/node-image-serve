@@ -58,3 +58,16 @@ test('try to load non existing image', async t => {
 	t.is(response.statusCode, 404);
 });
 
+test('try to load image with invalid parameter', async t => {
+	app.use(serveImage({
+		src: './test'
+	}));
+
+	/* eslint no-unused-vars: "warn" */
+	app.use((err, request, response, next) => {
+		response.status(417).end();
+	});
+
+	const response = await request(app).get('/test.png?size=640x');
+	t.is(response.statusCode, 417);
+});

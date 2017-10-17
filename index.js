@@ -10,13 +10,19 @@ const mime = require('mime-types');
 module.exports.serveImage = opts => {
 	opts = opts || {};
 	const srcDir = opts.src || process.cwd();
-	const errorLog = opts.onError || console.error;
+	let errorLog = opts.onError;
 	/* eslint no-unused-vars: "warn" */
 	const endLog = opts.onEnd || function (message) {};
 	/* eslint no-unused-vars: "warn" */
 	const progressLog = opts.onProgress || function (progress) {};
 
 	return (request, response, next) => {
+		if (errorLog === undefined) {
+			errorLog = err => {
+				next(err);
+			};
+		}
+
 		const requestedImage = path.join(srcDir, request.path);
 		const size = request.query.size || '100%';
 		response.set('content-type', mime.lookup(requestedImage));
