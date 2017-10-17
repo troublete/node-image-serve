@@ -1,6 +1,6 @@
 {
   "name": "serve-image",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Express.js middleware to serve images in the dimension needed.",
   "main": "index.js",
   "scripts": {
