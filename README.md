@@ -3,6 +3,7 @@
 > Express.js middleware to serve images in the dimension needed. 🖼
 
 [![Build Status](https://travis-ci.org/troublete/image-serve.svg?branch=master)](https://travis-ci.org/troublete/image-serve)
+[![Dependency Status](https://dependencyci.com/github/troublete/image-serve/badge)](https://dependencyci.com/github/troublete/image-serve)
 
 ## Prerequisites
 
